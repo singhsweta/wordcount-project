@@ -1,0 +1,24 @@
+<html>
+<body bgcolor="#FF9F33 ">
+
+<div>
+<center><h1>  WORD COUNT </h1></center>
+</div>
+<br/>
+
+<div align="center">
+<form action="{% url 'count' %}">
+  <textarea rows=8 cols=56 name="fulltext" style="overflow:scroll;">
+  </textarea>
+  <br/>
+  <br/>
+  <input type="submit" value="COUNT!"/>
+  <br/>
+  <br/>
+  <button onclick="window.location={% url 'about' %};"  type="button">ABOUT</button>
+</form>
+</div>
+
+
+</body>
+</html>
